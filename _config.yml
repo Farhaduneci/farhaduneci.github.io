@@ -1,21 +1,35 @@
 url: "https://farhaduneci.github.io"
 
 title: "Farhad Uneci"
+tagline: "Software engineering student"
+author: "Farhad Uneci"
 
 source: ./site
 destination: ./public
 
 timezone: Asia/Tehran
 
+twitter:
+  username: farhaduneci
+  card: summary
+
 # exclude:
   # - ""
 
-urls:
-  - cv: https://drive.google.com/file/d/1_iR4kv7Zlbj1VNWbDglZ6NtlJb_uo60d/view?usp=sharing
-  - linkedin: https://www.linkedin.com/in/farhad-uneci
-  - twitter: https://twitter.com/farhaduneci
-  - github: https://github.com/Farhaduneci
-  - gmail: mailto:farhaduneci@gmail.com
-  - telegram: https://t.me/feriun
-  - phone: tel:+989398466445
+# Links
+url_cv: https://drive.google.com/file/d/1_iR4kv7Zlbj1VNWbDglZ6NtlJb_uo60d/view?usp=sharing
+url_linkedin: https://www.linkedin.com/in/farhad-uneci
+url_twitter: https://twitter.com/farhaduneci
+url_github: https://github.com/Farhaduneci
+url_gmail: mailto:farhaduneci@gmail.com
+url_telegram: https://t.me/feriun
+url_phone: tel:+989398466445
 
+bio: "Current student enrolled in the Hamadan University of Technology in Bachelor of Science Program focused on Computer Software Engineering. I've been endeavoring both to study and grasp knowledge about related technologies to computer science and web development, I've also recently focused on Artificial Intelligence…"
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-minifier
+
+jekyll-minifier:
+  compress_css: false
