@@ -1,5 +1,6 @@
 _site/
 _public/
+public/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata

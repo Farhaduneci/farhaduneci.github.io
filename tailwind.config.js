@@ -2,10 +2,13 @@ module.exports = {
   content: [
     './site/**/*.{html,js,md}'
   ],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'media', // or 'media' or 'class'
   theme: {
     fontFamily: {
       'roboto': ['Roboto Slab', 'sans-serif', 'serif'],
+    },
+    letterSpacing: {
+      wide: '5px',
     },
     extend: {}
   },

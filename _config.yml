@@ -3,9 +3,19 @@ url: "https://farhaduneci.github.io"
 title: "Farhad Uneci"
 
 source: ./site
-destination: ./_public
+destination: ./public
 
 timezone: Asia/Tehran
 
 # exclude:
   # - ""
+
+urls:
+  - cv: https://drive.google.com/file/d/1_iR4kv7Zlbj1VNWbDglZ6NtlJb_uo60d/view?usp=sharing
+  - linkedin: https://www.linkedin.com/in/farhad-uneci
+  - twitter: https://twitter.com/farhaduneci
+  - github: https://github.com/Farhaduneci
+  - gmail: mailto:farhaduneci@gmail.com
+  - telegram: https://t.me/feriun
+  - phone: tel:+989398466445
+
