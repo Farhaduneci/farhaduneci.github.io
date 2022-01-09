@@ -1,3 +1,11 @@
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "" # the subpath of your site, e.g. /blog
-title: "" # the name of your site, e.g. ACME Corp.
+url: "https://farhaduneci.github.io"
+
+title: "Farhad Uneci"
+
+source: ./site
+destination: ./_public
+
+timezone: Asia/Tehran
+
+# exclude:
+  # - ""
