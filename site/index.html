@@ -3,26 +3,4 @@ layout: default
 title: 'Home'
 ---
 
-<div class="home-pattern z-10 h-full flex justify-center items-center unselectable">
-    <div class="bg-white card z-20 flex flex-col justify-center items-center lg:flex-row gap-14 p-8 m-6 rounded-md xl:w-2/3">
-        <div class="left basis-1/2">
-            <h1 class="text-5xl md:text-6xl lg:text-7xl text-center sm:text-left text-neutral-800 font-semibold">
-                Farhad <br>
-                <span class="text-neutral-700 font-normal">
-                    Uneci
-                </span>
-            </h1>
-            <hr class="my-5 sm:hidden">
-            <p class="mt-5 text-gray-600 text-justify max-w-screen-sm">
-                {{ site.bio }}
-            </p>
-            {% include ContactMeButton.html %}
-            {% include Links.html %}
-        </div>
-        <div class="right basis-1/2 self-center w-full  order-first lg:order-last">
-            <img src="{{ "/assets/images/Me.jpg" | relative_url }}" alt="Farhad
-            Uneci" class="rounded-md object-cover object-center h-52 md:h-64 lg:h-72
-            xl:h-96 w-full">
-        </div>
-    </div>
-</div>
+{% include pages/Home.html %}
