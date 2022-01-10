@@ -30,6 +30,7 @@ bio: "Current student enrolled in the Hamadan University of Technology in Bachel
 plugins:
   - jekyll-seo-tag
   - jekyll-minifier
+  - jekyll-timeago
 
 jekyll-minifier:
   compress_css: false

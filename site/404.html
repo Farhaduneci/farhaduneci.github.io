@@ -3,20 +3,27 @@ layout: default
 title: 'Page not found'
 ---
 
-<div class="grid grid-rows-[1fr_auto] p-3 h-full">
+<div class="grid grid-rows-[1fr_auto] p-3 h-full unselectable">
     <div class="flex gap-2 flex-col justify-center items-center text-center">
         <img src="assets/icons/404.svg" alt="404_Picture" width="500px" height="375px">
         <h4 class="text-red-800 font-medium uppercase mb-2">404 Error</h4>
         <h1 class=" text-5xl font-bold">Page Not Found.</h1>
         <p class="text-gray-700 mt-3 w-2/3">Sorry, the page you're looking for can not be
-        found.</p>
+            found.</p>
 
-    <a href={%link index.html %} class="text-red-800 font-medium mt-5">Go back Home</a>
+        <a href={%link index.html %} class="text-red-800 font-medium mt-5
+        hover:text-red-600 transition-colors duration-200">
+            Go back Home <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6
+            fill-red-800 inline" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            </svg>
+        </a>
     </div>
     <div>
         <ul class="flex gap-2 justify-center text-gray-500 text-sm font-medium p-5">
             <li>
-                <a href=>
+                <a href={{ site.url_gmail }}>
                     Contact me
                 </a>
             </li>
@@ -24,7 +31,7 @@ title: 'Page not found'
                 |
             </li>
             <li>
-                <a href=>
+                <a href={{ site.url_twitter }}>
                     Twitter
                 </a>
             </li>
