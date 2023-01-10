@@ -1,0 +1,32 @@
+{
+  "name": "farhaduneci.github.io",
+  "version": "1.0",
+  "description": "My Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "jekyll:dev": "bundle exec jekyll serve -l --incremental --watch",
+    "jekyll:build": "JEKYLL_ENV=production bundle exec jekyll build",
+    "css:dev": "postcss site/_sass/main.scss --output public/assets/css/style.css --watch",
+    "css:build": "NODE_ENV=production postcss site/_sass/main.scss --output public/assets/css/style.css",
+    "dev": "concurrently --kill-others \"npm:jekyll:dev\" \"npm:css:dev\"",
+    "build": "npm run css:build && npm run jekyll:build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Farhaduneci/farhaduneci.github.io.git"
+  },
+  "author": "Farhad Uneci",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Farhaduneci/farhaduneci.github.io/issues"
+  },
+  "homepage": "https://github.com/Farhaduneci/farhaduneci.github.io#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "concurrently": "^7.0.0",
+    "cssnano": "^5.0.15",
+    "postcss": "^8.4.5",
+    "postcss-cli": "^9.1.0",
+    "tailwindcss": "^3.0.12"
+  }
+}

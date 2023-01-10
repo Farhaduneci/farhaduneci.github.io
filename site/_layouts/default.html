@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>{{ page.title }} &bull; {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+    {% seo %}
+  </head>
+  <body class="grid grid-rows-[1fr_auto] bg-gray-200">
+    <main>
+      {{ content }}
+    </main>
+    {% include layout/Footer.html %}
+  </body>
+</html>

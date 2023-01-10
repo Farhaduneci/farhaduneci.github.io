@@ -1,0 +1,37 @@
+url: "https://farhaduneci.github.io"
+
+title: "Farhad Uneci"
+tagline: "Software engineering athirst"
+author: "Farhad Uneci"
+
+source: ./site
+destination: ./public
+
+timezone: Asia/Tehran
+
+twitter:
+  username: feriunn
+  card: summary
+
+# exclude:
+  # - ""
+
+# Links
+url_cv: "https://drive.google.com/file/d/1dwW0tr6X3ZbbR2RxO-8OS0F-W0HABlTf/view?usp=sharing"
+url_linkedin: https://www.linkedin.com/in/farhad-uneci
+url_twitter: https://twitter.com/feriunn
+url_github: https://github.com/Farhaduneci
+url_gmail: mailto:farhaduneci@gmail.com
+
+bio: "Hard-working, highly motivated individual with proficiency in
+  Python, and Django. I've been endeavoring both to study and grasp
+  knowledge about related technologies to computer science and web
+  development. Experienced being a back-end developer and looking
+  forward to greater opportunities."
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-minifier
+
+jekyll-minifier:
+  compress_css: false
