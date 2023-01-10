@@ -214,3 +214,4 @@ dist
 public/
 .vscode/
 *.lock
+site/assets/css/style.css

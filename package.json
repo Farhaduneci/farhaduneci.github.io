@@ -1,13 +1,13 @@
 {
   "name": "farhaduneci.github.io",
-  "version": "1.0",
+  "version": "1.0.0",
   "description": "My Portfolio",
   "main": "index.js",
   "scripts": {
     "jekyll:dev": "bundle exec jekyll serve -l --incremental --watch",
     "jekyll:build": "JEKYLL_ENV=production bundle exec jekyll build",
-    "css:dev": "postcss site/_sass/main.scss --output public/assets/css/style.css --watch",
-    "css:build": "NODE_ENV=production postcss site/_sass/main.scss --output public/assets/css/style.css",
+    "css:dev": "postcss site/_sass/main.scss --output site/assets/css/style.css --watch",
+    "css:build": "NODE_ENV=production postcss site/_sass/main.scss --output site/assets/css/style.css",
     "dev": "concurrently --kill-others \"npm:jekyll:dev\" \"npm:css:dev\"",
     "build": "npm run css:build && npm run jekyll:build"
   },
