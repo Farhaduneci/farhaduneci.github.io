@@ -5,6 +5,7 @@ on:
     branches: ["main"]
 
 permissions:
+  id-token: write
   contents: read
   pages: write
 
@@ -29,7 +30,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: ~/.npm
-          key: ${{ runner.os }}-build-${{ hashFiles('**/package-lock.json') }}
+          key: ${{ runner.os }}-build-${{ hashFiles('**/package.json') }}
       
       - name: Install Dependencies
         run: npm install
